@@ -5,13 +5,12 @@ print("Hello World!")
 #cursor
 
 cur = db.cursor(MySQLdb.cursors.DictCursor)
+
 sql = "UPDATE students SET gradeLvl=9 WHERE id=4)" # "SELECT * from students ORDER BY name"
+
 cur.execute(sql)
 rows = cur.fetchall()
-age = 10
+#send code
 db.autocommit(True)
-name = "bob"
-for row in rows:
-	print(row['name'] + " " + str(row['age']) + " " + str(row['gradeLVL']))
 cur.close()
 db.close()
