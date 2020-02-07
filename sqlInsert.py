@@ -1,6 +1,6 @@
 import MySQLdb
-db = MySQLdb.connect(host = "192.168.0.131",user = "donwya21",passwd="wyand",
-db="donwya21")
+db = MySQLdb.connect(host = "localhost",user = "user",passwd="password",
+db="school")
 print("Hello World!")
 #cursor
 
